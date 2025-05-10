@@ -1,73 +1,125 @@
-# Welcome to your Lovable project
+# Locked.in Fitness App
 
-## Project info
+A modern fitness application with AI-powered recommendations, personalized tracking, and community features. Designed with an Indian context in mind, featuring culturally relevant workout and nutrition recommendations.
 
-**URL**: https://lovable.dev/projects/4eaa6df6-941f-4f53-b3a5-f1ef536dd802
+## Features
 
-## How can I edit this code?
+- **User Authentication**: Secure signup, login, and profile management
+- **Personalized Workouts**: Get workout recommendations based on your fitness level and goals
+- **Nutrition Tracking**: Track your meals and get Indian-specific nutrition recommendations
+- **Progress Monitoring**: Track your fitness journey with detailed statistics
+- **Community Challenges**: Participate in challenges with other users
+- **AI Assistant**: Get help and guidance from our AI fitness assistant
+- **Gamification**: Earn badges, track streaks, and level up your fitness journey
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+### Frontend
+- React
+- TypeScript
+- React Router
+- Axios
+- TailwindCSS
+- Lucide Icons
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4eaa6df6-941f-4f53-b3a5-f1ef536dd802) and start prompting.
+### Backend
+- Node.js
+- Express
+- MongoDB (optional)
+- JWT Authentication
+- bcrypt for password hashing
 
-Changes made via Lovable will be committed automatically to this repo.
+## Getting Started
 
-**Use your preferred IDE**
+### Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Node.js (v14 or higher)
+- npm or yarn
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Installation
 
-Follow these steps:
+1. Clone the repository
+```
+git clone https://github.com/yourusername/locked-in-fitness.git
+cd locked-in-fitness
+```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+2. Install frontend dependencies
+```
+npm install
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+3. Install backend dependencies
+```
+cd server
+npm install
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Running the Application
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+1. Start the backend server
+```
+cd server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+2. In a new terminal, start the frontend development server
+```
+npm run dev
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+3. Open your browser and navigate to `http://localhost:5173`
 
-**Use GitHub Codespaces**
+### Demo Login Credentials
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+You can use these demo accounts to test the application:
 
-## What technologies are used for this project?
+1. **Rahul Sharma (Male User)**
+   - Email: demo@lockedin.fit
+   - Password: demo123
 
-This project is built with:
+2. **Priya Patel (Female User)**
+   - Email: priya@lockedin.fit
+   - Password: priya123
 
+## Project Structure
+
+```
+locked-in/
+├── public/              # Static files
+├── server/              # Backend server
+│   ├── models/          # MongoDB models
+│   ├── routes/          # API routes
+│   ├── middleware/      # Custom middleware
+│   ├── server.js        # Server entry point
+│   └── package.json     # Backend dependencies
+├── src/
+│   ├── components/      # React components
+│   ├── lib/             # Utilities and services
+│   ├── pages/           # Page components
+│   ├── styles/          # Global styles
+│   ├── App.tsx          # Main app component
+│   └── main.tsx         # Entry point
+└── package.json         # Frontend dependencies
+```
+
+## Original Project Info
+
+**URL**: https://lovable.dev/projects/4eaa6df6-941f-4f53-b3a5-f1ef536dd802
+
+This project was originally built with:
 - Vite
 - TypeScript
 - React
-- shadcn-ui
-- Tailwind CSS
+- TailwindCSS
 
-## How can I deploy this project?
+## License
 
-Simply open [Lovable](https://lovable.dev/projects/4eaa6df6-941f-4f53-b3a5-f1ef536dd802) and click on Share -> Publish.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Can I connect a custom domain to my Lovable project?
+## Acknowledgments
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- [TailwindCSS](https://tailwindcss.com/)
+- [React](https://reactjs.org/)
+- [Express](https://expressjs.com/)
+- [MongoDB](https://www.mongodb.com/)
